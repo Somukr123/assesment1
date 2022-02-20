@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  background-color: green;
+  font-size: 20px;
+  padding: 13px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 35px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn:hover{
+  background-color: rgb(21, 70, 21);
+  text-decoration: underline;
+}
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.image{
+  width: 500px;
+  height: 500px;
+}
+.conatiner_like_view_share{
+  width: 500px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+}
+.container_para{
+  font-size: 20px;
+}
+.font_awesome{
+  margin-right: 5px;
+}
+.font_awesome_first{
+  color: red;
+}
+.font_awesome_second{
+  color: green;
+}
+.font_awesome_third{
+  color: blue;
+}
+
+.navigate{
+  display: flex;
+  background-color: rgb(24, 24, 26);
+  text-decoration: none;
+  padding: 10px;
+}
+.list{
+  list-style: none;
+  margin: 10px;
+}
+.connectToPath{
   color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: rgb(10, 10, 153);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.connectToPath:hover{
+  background-color: rgb(26, 153, 153);
+}
+.connectToPath.active{
+  background-color: rgb(13, 44, 196);
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date{
+  /* background-color: rgb(58, 122, 58); */
+  margin-left: -35px;
+  font-size: 18px;
 }

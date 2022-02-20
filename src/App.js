@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Firstpage from './Components/FirstPage';
+import Navigation from './Components/Navigation';
+import SecondPage from './Components/SecondPage';
+import ThirdPage from './Components/ThirdPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navigation />
+        <Routes>
+          <Route path='/' element={<Firstpage />}/>
+          <Route path='/secondpage' element={<SecondPage />}/>
+          <Route path='/thirdpage' element={<ThirdPage />}/>
+          <Route path="*" element={"404 Error!"} />
+        </Routes>
     </div>
   );
 }
